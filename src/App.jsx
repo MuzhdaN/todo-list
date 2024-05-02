@@ -10,7 +10,7 @@ export default function App() {
   const [todos, setTodos] = useState(() => {
   //  get info from local storage
     const localValue = localStorage.getItem("ITEMS")
-    if(localValue == null) return "hello"
+    if(localValue == null) return ""
 
     return JSON.parse(localValue)
   }
@@ -92,7 +92,7 @@ export default function App() {
       <h4> {formattedDate} </h4>
       <NewTodoForm addTodo={addTodo} />
       {/* <h1 className='header'>My Todo List</h1> */}
-      {/* <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} /> */}
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
       <Confetti active={isConfettiActive} config={confettiConfig}  disableForReducedMotion={true} />
     </>
   )
