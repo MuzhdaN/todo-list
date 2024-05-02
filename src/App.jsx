@@ -90,10 +90,10 @@ export default function App() {
     <>
       <h1 className='title'> My Todo List </h1>
       <h4> {formattedDate} </h4>
-      <NewTodoForm addTodo={addTodo} />
+      {/* <NewTodoForm addTodo={addTodo} /> */}
       {/* <h1 className='header'>My Todo List</h1> */}
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-      <Confetti active={isConfettiActive} config={confettiConfig}  disableForReducedMotion={true} />
+      {/* <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <Confetti active={isConfettiActive} config={confettiConfig}  disableForReducedMotion={true} /> */}
     </>
   )
 }
