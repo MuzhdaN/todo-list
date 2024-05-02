@@ -1,6 +1,6 @@
 ## Todo List
 
-This is a simple Todo List app built with React. You can add, and delete your todos, and the app will save your them so you can access them even after refreshing the page.
+This is a simple Todo List app built with React. You can add, and delete your todos, and the app will save your them so you can access them even after refreshing the page. [Live Demo](https://muzhdan.github.io/todo-list/)
 
 ### Features
 
