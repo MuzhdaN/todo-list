@@ -1,0 +1,130 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #333;
+  color: hsl(284, 100%, 50%);
+  max-width: 50vh;
+  padding: 1rem;
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+}
+
+h4 {
+  color: hsl(284, 100%, 63%);
+}
+
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.9rem;
+
+}
+
+.new-item-form input {
+  outline: none;
+  /* border: 1px solid hsl(0, 0%, 100%); */
+  background: hsl(284, 100%, 30%);
+  border-radius: 0.25em;
+  padding: 0.6rem 0.5em;
+  color: hsl(284, 100%, 96%);
+  flex-grow: 6;
+}
+
+.new-item-form input:focus {
+  border: 1px solid hsl(270, 100%, 70%);
+}
+
+.btn {
+  background: hsl(284, 100%, 50%, 0.1);
+  border: 1px solid hsl(290, 100%, 50%);
+  color: hsl(284, 100%, 50%);
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+}
+
+.delete-btn {
+  background: #333;
+  color: hsl(0, 100%, 50%);
+  color: hsla(294, 100%, 50%, 0.514);
+  padding: 0.5rem 0.6rem;
+  /* border-radius: 0.25em; */
+  cursor: pointer;
+  outline: none;
+}
+
+.delete-btn:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: hsla(284, 100%, 50%, 0.514);
+  color: #fff;
+}
+
+/* .btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+  background: hsl(0, 100%, 40%, 0.2);
+} */
+
+
+.header {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.list li:has(input:checked) label {
+  color: hsl(270, 20%, 40%);
+  text-decoration: line-through;
+}
+
+.list {
+  margin: 0;
+  padding-top: 2rem;
+  margin-left: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.49rem;
+}
+
+.list li {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* cursor: pointer; */
+}
+
+.list li label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.list li input[type="checkbox"] {
+  outline: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
