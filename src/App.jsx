@@ -7,14 +7,18 @@ import TodoList from './TodoList'
 export default function App() {
 
   // whatever u return from the function will be the defualt value
-  const [todos, setTodos] = useState(() => {
-  //  get info from local storage
-    const localValue = localStorage.getItem("ITEMS")
-    if(localValue == null) return ""
+const [todos, setTodos] = useState(() => {
+  // Get info from local storage
+  const localValue = localStorage.getItem("ITEMS");
 
-    return JSON.parse(localValue)
+  // Check if localValue exists and is not empty
+  if (localValue && localValue.trim() !== "") {
+    return JSON.parse(localValue);
+  } else {
+    return [];
   }
-  )
+});
+
 
   const today = new Date();
   const formattedDate = today.toLocaleDateString(); 
