@@ -92,7 +92,7 @@ export default function App() {
       <h4> {formattedDate} </h4>
       <NewTodoForm addTodo={addTodo} />
       {/* <h1 className='header'>My Todo List</h1> */}
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      {/* <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} /> */}
       <Confetti active={isConfettiActive} config={confettiConfig}  disableForReducedMotion={true} />
     </>
   )
